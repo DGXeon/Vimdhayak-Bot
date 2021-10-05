@@ -30,19 +30,23 @@
 🦄 npm start
 ```
 ## For Termux
-🦄apt update
-🦄apt upgrade
-🦄pkg update && pkg upgrade 
-🦄termux-setup-storage (y)
-🦄pkg install hot
-🦄pkg install bash
-🦄pkg install libwebp
-🦄pkg install git -y
-🦄pkg install nodejs -y 
-🦄pkg install ffmpeg -y 
-🦄pkg install wget
-🦄pkg install imagemagick -y
-
+```bash
+🦄 apt update
+🦄 apt upgrade
+🦄 pkg update && pkg upgrade 
+🦄 pkg install hot
+🦄 pkg install bash
+🦄 pkg install libwebp
+🦄 pkg install git -y
+🦄 pkg install nodejs -y 
+🦄 pkg install ffmpeg -y 
+🦄 pkg install wget
+🦄 pkg install imagemagick -y
+🦄 git clone https://github.com/DGXeon/Vimdhayak-Bot
+🦄 cd Vimdhayak-Bot
+🦄 npm start
+🦄 scan qr code within 15seconds
+```
 
 ## Connect With Me
 <p align="center">
