@@ -1158,7 +1158,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       let _uptime = process.uptime() * 1000;
       let uptime = clockString(_uptime);
 
-await itsmevall.setStatus(`Aktif selama ${uptime}`).catch((_) => _);
+await itsmevall.setStatus(`Active since ${uptime}`).catch((_) => _);
       settingstatus = new Date() * 1;
     }
     if (!mek.key.fromMe && banChats === true) return;
