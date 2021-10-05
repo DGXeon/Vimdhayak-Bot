@@ -1,6 +1,9 @@
 <div align="center">
 <img src="https://i.ibb.co/S3q2sYm/1631334611564.png" alt="Xeon" width="170" />
 
+<img src="https://media4.giphy.com/media/qLFKvOpoS1N7ts7xO8/giphy.gif">
+<details>
+
 ## Xeon-SELF-BOT
 
 </div>
