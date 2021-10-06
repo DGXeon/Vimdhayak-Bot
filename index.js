@@ -1996,37 +1996,41 @@ case "add":
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("Bot not admin");
-        if (
-          mek.message.extendedTextMessage === undefined ||
-          mek.message.extendedTextMessage === null
-        )
-          return reply("Reply members");
-        mentionede = mek.message.extendedTextMessage.contextInfo.participant;
-        itsmevall.groupDemoteAdmin(from, [mentionede]);
-        teks = `Members @${mentionede.split("@")[0]} succes demote`;
-        itsmevall.sendMessage(from, teks, text, {
-          quoted: mek,
-          contextInfo: { mentionedJid: [mentionede] },
-        });
-        break;
+        if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*tag the person u want to demote!*')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = ''
+						for (let _ of mentioned) {
+							teks += `*you have been domoted from admin, lmao* :\n`
+							teks += `@_.split('@')[0]`
+						}
+						mentions(teks, mentioned, true)
+						itsmevall.groupDemoteAdmin(from, mentioned)
+					} else {
+						mentions(`*Order received, demoted* @${mentioned[0].split('@')[0]} *you have been removed from admin tag*`, mentioned, true)
+						itsmevall.groupDemoteAdmin(from, mentioned)
+					}
+					break;
       // Promote Members
       case "promote":
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("Bot not admin");
-        if (
-          mek.message.extendedTextMessage === undefined ||
-          mek.message.extendedTextMessage === null
-        )
-          return reply("Reply members");
-        mentionede = mek.message.extendedTextMessage.contextInfo.participant;
-        itsmevall.groupMakeAdmin(from, [mentionede]);
-        teks = `Members @${mentionede.split("@")[0]} succes promote`;
-        itsmevall.sendMessage(from, teks, text, {
-          quoted: mek,
-          contextInfo: { mentionedJid: [mentionede] },
-        });
-        break;
+                if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('*tag the person u want to make admin!*')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = ''
+						for (let _ of mentioned) {
+							teks += `*Congrats* 🥳 *you have been promoted as grup admin🎉, but remember, u are not allowed to add or promote anybody without grup owner permission🗿*:\n`
+							teks += `@_.split('@')[0]`
+						}
+						mentions(teks, mentioned, true)
+						itsmevall.groupMakeAdmin(from, mentioned)
+					} else {
+						mentions(`*Congrats* 🥳 @${mentioned[0].split('@')[0]} *you have been promoted as grup admin🎉, but remember, u are not allowed to add or poromote anybody without grup owner permission🗿*`, mentioned, true)
+						itsmevall.groupMakeAdmin(from, mentioned)
+					}
+					break;
       case "closegc":
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Only admin");
         if (!isBotGroupAdmins) return reply("Bot not admin");
