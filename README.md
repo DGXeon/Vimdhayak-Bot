@@ -50,6 +50,7 @@
 🦄 pkg install imagemagick -y
 🦄 git clone https://github.com/DGXeon/Vimdhayak-Bot
 🦄 cd Vimdhayak-Bot
+🦄 npm install
 🦄 npm start
 🦄 scan qr code within 15seconds
 ```
