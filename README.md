@@ -64,23 +64,3 @@ My Whatsapp Group👇
 # Thanks To
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Xeon`](https://github.com/DGXeon)
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>YouTube logo link options</title>
-</head>
-
-<body>
-
-    The link of the YouTube logo :
-    <input type="text" name="logoLink" id="logoLink">
-
-    <div id="status"></div>
-    <button id="save">Save</button>
-
-    <script src="options.js"></script>
-</body>
-
-</html>
