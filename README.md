@@ -22,6 +22,12 @@
 * [Libwebp](https://developers.google.com/speed/webp/download)
 * Any text editor
 
+## `ADD BUILDPACK`
+
+```
+> https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+```
+
 # Installation
 ## Clone Repo & Installation dependencies
 ```bash
