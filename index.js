@@ -109,9 +109,9 @@ readPc = false;
 autovn = false;
 autoketik = false;
 prefixStatus = true;
-targetpc = "916909137213";
-owner = "916909137213";
-fakeyoi = "Xeon";
+targetpc = "919609900020";
+owner = "919609900020";
+fakeyoi = "Deepesh";
 HunterApi = "Ikyy69",
 valkey = "rivalgans",
 dapapi = "itsmevall",
@@ -1176,9 +1176,9 @@ case 'menu':
                buttonsMessage = {
                contentText: `${txtt}`,
                footerText: `© Owner: ${fakeyoi}
-YouTube = https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A
-Instagram = https://www.instagram.com/josephxeon13/
-Github = https://github.com/DGXeon
+
+Instagram = https://instagram.com/itz_deepesh12/
+Github = https://github.com/ToshiroHitsugaya223
  
 *Gulambi Owner Vimdhayak*`, imageMessage: imageMsg,
                buttons: buttons,
@@ -1455,7 +1455,7 @@ reply(`${mek.quoted.caption}`)
 }
 break
 case 'iggw':
-  reply('https://www.instagram.com/josephxeon13/')
+  reply('https://www.instagram.com/itz_deepesh12/')
 break
       /*case "owner":
         sendKontak(from, owner, "Xeon", "Busy");*/
