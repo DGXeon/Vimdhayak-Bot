@@ -109,13 +109,13 @@ readPc = false;
 autovn = true;
 autoketik = false;
 prefixStatus = true;
-targetpc = "6282284568556";
-owner = "6282284568556";
+targetpc = "+919609900020";
+owner = "+919609900020";
 fakeyoi = "WinBellzッ";
 HunterApi = "Ikyy69",
 valkey = "rivalgans",
 dapapi = "itsmevall",
-nomorowner1 = "@6282284568556";
+nomorowner1 = "@+919609900020";
 fake = `WinBellzッ\n ${ucapanWaktu} Kak🐤 \n🔖Prefix :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg");
 numbernye = "0";
@@ -1177,9 +1177,9 @@ case 'menu':
                buttonsMessage = {
                contentText: `${txtt}`,
                footerText: `© Owner ${fakeyoi}
-YouTube = https://youtube.com/channel/UCe_fPdoiz5Qpj25XdRh6Xgg
-InsTaGram = https://instagram.com/WinBellz
-GiThuB = https://github.com/GzzzzBotz
+
+InsTaGram = https://instagram.com/itz_deepesh12?utm_medium=copy_link
+GiThuB = https://github.com/ToshiroHitsugaya223
  
 *Thank Big Too🛐*
 *-Allah Swt✨*
